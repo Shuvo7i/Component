@@ -22,7 +22,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "eslintConfig": {
     "extends": [
@@ -53,7 +57,9 @@
     "@testing-library/react": "^16.3.2",
     "@types/styled-components": "^5.1.36",
     "eslint-plugin-storybook": "^10.2.13",
+    "husky": "^9.1.7",
     "jest-styled-components": "^7.2.0",
+    "prettier": "^3.8.1",
     "storybook": "^10.2.13"
   }
 }
