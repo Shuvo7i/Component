@@ -23,7 +23,7 @@ FROM nginx:alpine
 COPY --from=build /bhuyan_mdakramul_ui_garden/storybook-static /usr/share/nginx/html
 
 # Make nginx listen on 8083 instead of 80
-RUN sed -i 's/listen\s\+80;/listen 8083;/' /etc/nginx/conf.d/default.conf
+RUN sed -i 's/listen\s\+80;/listen 8018;/' /etc/nginx/conf.d/default.conf
 
 EXPOSE 8083
 
