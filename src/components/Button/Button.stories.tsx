@@ -30,5 +30,3 @@ export const Off: Story = {
     disabled: true,
   },
 };
-
-const bad = 1;
