@@ -31,4 +31,4 @@ export const Off: Story = {
   },
 };
 
-const bad=1
+const bad = 1;
