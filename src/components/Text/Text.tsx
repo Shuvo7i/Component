@@ -27,7 +27,12 @@ export const Text: React.FC<TextProps> = ({
   disabledColor = "#94a3b8",
   size = "md",
 }) => (
-  <StyledText $disabled={disabled} $color={color} $dcolor={disabledColor} $size={size}>
+  <StyledText
+    $disabled={disabled}
+    $color={color}
+    $dcolor={disabledColor}
+    $size={size}
+  >
     {value}
   </StyledText>
 );

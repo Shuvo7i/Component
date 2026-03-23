@@ -8,11 +8,10 @@ const StyledLabel = styled.span<{
   $dcolor: string;
 }>`
   font-size: 5rem;
-  
+
   color: ${(p) => (p.$disabled ? p.$dcolor : p.$color)};
   opacity: ${(p) => (p.$disabled ? 0.7 : 1)};
   cursor: ${(p) => (p.$disabled ? "not-allowed" : "default")};
-
 `;
 
 export const Label: React.FC<LabelProps> = ({

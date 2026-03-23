@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
 import { Card } from "./Card";
 
 const meta: Meta<typeof Card> = {
@@ -12,7 +12,7 @@ const meta: Meta<typeof Card> = {
     disabledBackgroundColor: "#e2e8f0",
   },
 
-   parameters: {
+  parameters: {
     layout: "centered",
   },
   argTypes: {

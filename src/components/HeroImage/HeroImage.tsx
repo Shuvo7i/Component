@@ -8,7 +8,6 @@ const Wrap = styled.section<{
   $overlay: string;
   $doverlay: string;
 }>`
-  
   position: relative;
   background-image: url(${(p) => p.$img});
   background-size: cover;
@@ -21,7 +20,6 @@ const Wrap = styled.section<{
     background: ${(p) => (p.$disabled ? p.$doverlay : p.$overlay)};
     opacity: ${(p) => (p.$disabled ? 0.7 : 0.55)};
   }
-
 `;
 
 const Content = styled.div<{ $disabled: boolean }>`
@@ -58,8 +56,7 @@ export const HeroImage: React.FC<HeroImageProps> = ({
     $doverlay={disabledOverlayColor}
     aria-disabled={disabled}
   >
-    <Content 
-    $disabled={disabled}>
+    <Content $disabled={disabled}>
       <Title>{title}</Title>
       {subtitle ? <Subtitle>{subtitle}</Subtitle> : null}
     </Content>

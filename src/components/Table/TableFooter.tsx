@@ -18,7 +18,11 @@ export const TableFooter: React.FC<TableSectionProps> = ({
   disabledBackgroundColor = "#cbd5e1",
   children,
 }) => (
-  <Tfoot $disabled={disabled} $bg={backgroundColor} $dbg={disabledBackgroundColor}>
+  <Tfoot
+    $disabled={disabled}
+    $bg={backgroundColor}
+    $dbg={disabledBackgroundColor}
+  >
     {children}
   </Tfoot>
 );

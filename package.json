@@ -26,7 +26,8 @@
     "prepare": "husky",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "test:ci": "react-scripts test --watchAll=false --passWithNoTests"
   },
   "eslintConfig": {
     "extends": [

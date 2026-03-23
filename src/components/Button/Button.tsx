@@ -7,21 +7,18 @@ const StyledButton = styled.button<{
   $bg: string;
   $dbg: string;
   $color: string;
-  
 }>`
   border: none;
   border-radius: 12px;
   padding: 12px 16px;
   font-size: 1rem;
   font-weight: 700;
-  
+
   max-width: 100%;
   background: ${(p) => (p.$disabled ? p.$dbg : p.$bg)};
   color: ${(p) => p.$color};
   opacity: ${(p) => (p.$disabled ? 0.75 : 1)};
   cursor: ${(p) => (p.$disabled ? "not-allowed" : "pointer")};
-
-
 `;
 
 export const Button: React.FC<ButtonProps> = ({

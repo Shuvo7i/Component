@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
 import { Img } from "./Img";
 
 const meta: Meta<typeof Img> = {
@@ -18,7 +18,6 @@ const meta: Meta<typeof Img> = {
     layout: "centered",
   },
 };
-
 
 export default meta;
 type Story = StoryObj<typeof Img>;

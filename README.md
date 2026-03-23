@@ -1,6 +1,7 @@
 # Assignment 12 – Web Component Library
+
 Red River College Polytechnic  
-Full Stack Web Development  
+Full Stack Web Development
 
 ## Overview
 
@@ -29,6 +30,7 @@ The component library includes:
 - Card
 
 All components:
+
 - Are responsive
 - Use Styled Components
 - Have default and disabled states

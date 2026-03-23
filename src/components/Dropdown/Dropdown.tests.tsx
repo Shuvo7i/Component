@@ -15,7 +15,7 @@ describe("Dropdown", () => {
         options={[{ label: "A", value: "a" }]}
         disabled
         disabledBackgroundColor="#cccccc"
-      />
+      />,
     );
     const select = container.querySelector("select");
     expect(select as HTMLElement).toHaveStyleRule("background", "#cccccc");

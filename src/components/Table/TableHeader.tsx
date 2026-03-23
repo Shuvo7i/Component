@@ -17,7 +17,11 @@ export const TableHeader: React.FC<TableSectionProps> = ({
   disabledBackgroundColor = "#cbd5e1",
   children,
 }) => (
-  <Thead $disabled={disabled} $bg={backgroundColor} $dbg={disabledBackgroundColor}>
+  <Thead
+    $disabled={disabled}
+    $bg={backgroundColor}
+    $dbg={disabledBackgroundColor}
+  >
     {children}
   </Thead>
 );

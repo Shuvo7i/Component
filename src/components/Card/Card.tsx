@@ -17,11 +17,11 @@ const Wrap = styled.article<{
 `;
 
 const Title = styled.h3`
-  text-align:center
+  text-align: center;
 `;
 
 const Body = styled.p`
-  text-align:center
+  text-align: center;
 `;
 
 export const Card: React.FC<CardProps> = ({
@@ -31,12 +31,12 @@ export const Card: React.FC<CardProps> = ({
   backgroundColor = "#ffffff",
   disabledBackgroundColor = "#2c2e30",
 }) => (
-  <Wrap 
-  $disabled={disabled} 
-  $bg={backgroundColor} 
-  $dbg={disabledBackgroundColor}>
+  <Wrap
+    $disabled={disabled}
+    $bg={backgroundColor}
+    $dbg={disabledBackgroundColor}
+  >
     <Title>{title}</Title>
     <Body>{body}</Body>
   </Wrap>
-
 );

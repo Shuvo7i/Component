@@ -10,7 +10,7 @@ describe("Img", () => {
 
   test("disabled changes opacity and cursor", () => {
     const { container } = render(
-      <Img src="x.png" alt="Example" disabled disabledOpacity={0.25} />
+      <Img src="x.png" alt="Example" disabled disabledOpacity={0.25} />,
     );
     expect(container.firstChild).toHaveStyleRule("opacity", "0.25");
     expect(container.firstChild).toHaveStyleRule("cursor", "not-allowed");

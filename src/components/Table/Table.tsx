@@ -21,14 +21,18 @@ const StyledTable = styled.table<{
   border-radius: 16px;
   overflow: hidden;
 
-  th, td {
+  th,
+  td {
     border-bottom: 1px solid #e2e8f0;
     padding: 12px;
   }
 
   @media (max-width: 480px) {
     min-width: 420px;
-    th, td { padding: 10px; }
+    th,
+    td {
+      padding: 10px;
+    }
   }
 `;
 

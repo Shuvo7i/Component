@@ -15,7 +15,7 @@ describe("Button", () => {
         disabled
         backgroundColor="#000000"
         disabledBackgroundColor="#cccccc"
-      />
+      />,
     );
     expect(container.firstChild).toHaveStyleRule("background", "#cccccc");
     expect(container.firstChild).toHaveStyleRule("cursor", "not-allowed");

@@ -11,7 +11,7 @@ describe("Card", () => {
 
   test("disabled changes background and cursor", () => {
     const { container } = render(
-      <Card title="T" body="B" disabled disabledBackgroundColor="#cccccc" />
+      <Card title="T" body="B" disabled disabledBackgroundColor="#cccccc" />,
     );
     expect(container.firstChild).toHaveStyleRule("background", "#cccccc");
     expect(container.firstChild).toHaveStyleRule("cursor", "not-allowed");

@@ -22,7 +22,6 @@ const Select = styled.select<{
   cursor: ${(p) => (p.$disabled ? "not-allowed" : "pointer")};
   opacity: ${(p) => (p.$disabled ? 0.8 : 1)};
   font-size: 1rem;
-
 `;
 
 export const Dropdown: React.FC<DropdownProps> = ({

@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
 import { Button } from "./Button";
 
 const meta: Meta<typeof Button> = {
@@ -10,9 +10,8 @@ const meta: Meta<typeof Button> = {
     backgroundColor: "#2563eb",
     disabledBackgroundColor: "#cbd5e1",
     textColor: "#ffffff",
-    
   },
-   parameters: {
+  parameters: {
     layout: "centered",
   },
   argTypes: {
@@ -26,7 +25,8 @@ export default meta;
 type Story = StoryObj<typeof Button>;
 
 export const On: Story = {};
-export const Off: Story = { args: {
-  disabled: true,
-  
-} };
+export const Off: Story = {
+  args: {
+    disabled: true,
+  },
+};

@@ -6,6 +6,6 @@ export type ButtonProps = {
   backgroundColor?: string;
   disabledBackgroundColor?: string;
   textColor?: string;
-  
+
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };

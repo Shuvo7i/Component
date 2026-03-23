@@ -10,7 +10,7 @@ describe("Text", () => {
 
   test("disabled changes color and cursor", () => {
     const { container } = render(
-      <Text value="X" disabled disabledColor="#cccccc" />
+      <Text value="X" disabled disabledColor="#cccccc" />,
     );
     expect(container.firstChild).toHaveStyleRule("color", "#cccccc");
     expect(container.firstChild).toHaveStyleRule("cursor", "not-allowed");

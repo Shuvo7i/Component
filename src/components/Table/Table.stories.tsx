@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
 import { Table } from "./Table";
 import { TableHeader } from "./TableHeader";
 import { TableRow } from "./TableRow";
@@ -72,9 +72,15 @@ export const Disabled: Story = {
 
       <tbody>
         <TableRow disabled>
-          <TableCell disabled disabledBackgroundColor="#e2e8f0">Sam</TableCell>
-          <TableCell disabled disabledBackgroundColor="#e2e8f0">Developer</TableCell>
-          <TableCell disabled disabledBackgroundColor="#e2e8f0" align="right">16</TableCell>
+          <TableCell disabled disabledBackgroundColor="#e2e8f0">
+            Sam
+          </TableCell>
+          <TableCell disabled disabledBackgroundColor="#e2e8f0">
+            Developer
+          </TableCell>
+          <TableCell disabled disabledBackgroundColor="#e2e8f0" align="right">
+            16
+          </TableCell>
         </TableRow>
       </tbody>
 

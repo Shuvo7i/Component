@@ -8,12 +8,16 @@ describe("Table", () => {
     render(
       <Table>
         <TableHeader>
-          <tr><th>Header</th></tr>
+          <tr>
+            <th>Header</th>
+          </tr>
         </TableHeader>
         <tbody>
-          <tr><td>Cell</td></tr>
+          <tr>
+            <td>Cell</td>
+          </tr>
         </tbody>
-      </Table>
+      </Table>,
     );
     expect(screen.getByRole("table")).toBeVisible();
     expect(screen.getByText("Header")).toBeVisible();
@@ -22,8 +26,12 @@ describe("Table", () => {
   test("background changes when disabled", () => {
     const { container } = render(
       <Table disabled disabledBackgroundColor="#cccccc">
-        <tbody><tr><td>Cell</td></tr></tbody>
-      </Table>
+        <tbody>
+          <tr>
+            <td>Cell</td>
+          </tr>
+        </tbody>
+      </Table>,
     );
     // Table is inside Wrap: container.firstChild is Wrap, table is inside it.
     const table = container.querySelector("table");

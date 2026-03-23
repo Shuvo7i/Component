@@ -16,12 +16,12 @@ describe("HeroImage", () => {
         disabled
         overlayColor="rgba(0,0,0,1)"
         disabledOverlayColor="rgba(204,204,204,1)"
-      />
+      />,
     );
     expect(container.firstChild).toHaveStyleRule(
       "background",
       "rgba(204,204,204,1)",
-      { modifier: "::before" }
+      { modifier: "::before" },
     );
   });
 });

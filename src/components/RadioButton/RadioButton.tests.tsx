@@ -16,7 +16,7 @@ describe("RadioButton", () => {
         disabled
         accentColor="#000000"
         disabledAccentColor="#cccccc"
-      />
+      />,
     );
     const input = container.querySelector("input");
     expect(input as HTMLElement).toHaveStyleRule("accent-color", "#cccccc");

@@ -20,7 +20,12 @@ export const TableCell: React.FC<TableCellProps> = ({
   align = "left",
   children,
 }) => (
-  <Td $disabled={disabled} $bg={backgroundColor} $dbg={disabledBackgroundColor} $align={align}>
+  <Td
+    $disabled={disabled}
+    $bg={backgroundColor}
+    $dbg={disabledBackgroundColor}
+    $align={align}
+  >
     {children}
   </Td>
 );
